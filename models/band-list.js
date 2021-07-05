@@ -27,8 +27,9 @@ class BandList {
       if (band.uuid === uuid) {
         band.vote += 1;
       }
+      return band;
     });
-    return band;
+ 
   }
 
   changeName(uuid,name) {
@@ -36,8 +37,9 @@ class BandList {
       if (band.uuid === uuid) {
         band.name  = name;
       }
+      return band;
     });
-    return band;
+  
   }
 }
 
