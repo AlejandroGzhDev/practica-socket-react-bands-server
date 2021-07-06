@@ -11,11 +11,11 @@ class BandList {
   }
 
   addBand(name) {
-    const newBand = Band(name);
+    const newBand = new Band(name);
     this.bands.push(newBand);
   }
   removedBand(uuid) {
-    this.bands = this.bands.filter((band) => band.id != uuid);
+    this.bands = this.bands.filter((band) => band.uuid !== uuid);
   }
 
   getBands() {
